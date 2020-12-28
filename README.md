@@ -6,7 +6,7 @@ Based on Chrome's dinosaur running game. My basic JS version consisting of the g
 ## Features
 - Spacebar and mouse click interaction.
 - High score local storage.
-- Level (pipe speed) changes every 100.
+- Pipe speed (levels) increased at every 100 score intervals.
 - Single jump only.
 - Random pipe height and width at each run.
 
