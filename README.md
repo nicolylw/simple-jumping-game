@@ -1,2 +1,12 @@
 # simple-jumping-game
-Based on Chrome's dinosaur running game. My basic JS version consisting of the game's foundations on &lt;canvas>.
+Based on Chrome's dinosaur running game. My basic JS version consisting of the game's foundations built using &lt;canvas>.
+
+## Features
+- Spacebar and mouse click interaction.
+- High score local storage.
+- Level (pipe speed) changes every 100.
+- Single jump only.
+- Random pipe height and width at each run.
+
+## Still working on
+- Circle and rectangle collision.
