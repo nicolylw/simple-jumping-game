@@ -193,6 +193,11 @@ document.addEventListener('click', function(e) {
 	}
 });
 
+window.addEventListener('keydown', function(e) {
+	if (e.code === 'Space' && e.target == document.body) {
+		e.preventDefault();
+	}
+});
 
 document.addEventListener('keydown', function(e) {
 	if (pressed) {
