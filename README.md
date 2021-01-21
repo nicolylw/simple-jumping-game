@@ -11,4 +11,4 @@ Based on Chrome's dinosaur running game. My basic JS version consisting of the g
 - Random pipe height and width at each run.
 
 ## Still working on
-- Circle and rectangle collision.
+- Better circle and rectangle collision. Original collision code credit to https://stackoverflow.com/a/21096179 
