@@ -62,19 +62,12 @@ function drawCircle() {
 
 var loop = function() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 	ctx.fillStyle = "black";
 	ctx.font = "12px Verdana";
 	ctx.fillText(score, 20, 20);
 
 	jump < canvas.height - 20 ? jump += 5 : jump = canvas.height - 20;
-
-	// if (jump < canvas.height - 20) {
-	// 	jump += 5;
-	// } else {
-	// 	jump = canvas.height - 20;
-	// }
-
+	
 	circle.y = jump;
 	pipeX -= 6;
 	if (pipeX < canvas.width && pipeX < -pipe.w * 3) {
@@ -131,6 +124,8 @@ function jumpUp() {
 	}, 10);
 }
 
+// Credit to https://stackoverflow.com/a/21096179 
+// I'm currently in the process of making changes to this function for better collision detection
 function colliding(circle, rect) {
 	var distX = Math.abs(circle.x - rect.x - rect.w / 2);
 	var distY = Math.abs(circle.y - rect.y - rect.h / 2);
@@ -182,7 +177,6 @@ canvas.addEventListener('click', function(e) {
 	if (startGame == false && restartGame == false || restartGame == true) {
 		restartGame = false;
 		start();
-		// e.preventDefault();
 		e.stopPropagation();
 	}
 });
@@ -216,7 +210,4 @@ document.addEventListener('keydown', function(e) {
 
 document.addEventListener('keyup', function(e) {
 	pressed = false;
-	// if (e.code === 'Space') {
-	// 	e.preventDefault();
-	// }
 });
